@@ -61,7 +61,7 @@ class Player {
             ctx.lineTo(mouse.x, mouse.y);
             ctx.stroke();
     }
-        ctx.fillStyle = 'transperent';
+        ctx.fillStyle = 'transparent';
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI *2);
         ctx.fill();
@@ -185,9 +185,9 @@ function handleBubbles(){
     }else if(bubblesArray[i].distance < bubblesArray[i].radius + player.radius){
             if(!bubblesArray[i].counted){
                 if(bubblesArray[i].sound == 'sound1'){
-                //    bubblePop1.play(); 
+                   bubblePop1.play(); 
                 }else{
-                    // bubblePop2.play();
+                    bubblePop2.play();
                 }
                 score++; 
                 bubblesArray[i].counted = true;
